@@ -1,5 +1,9 @@
 .idea
-out
+.gradle
 *.iml
-*.xml
-*.class
+out
+gen
+/**/build
+/**/classes
+/**/logs
+/**/lib
