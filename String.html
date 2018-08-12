@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StringBuffer/StringBuilder/String 的区别</title>
+</head>
+<body>
+<h3>String 和StringBuffer的区别</h3>
+JAVA平台提供了两个类:String和StringBuffer，它们可以储存和操作字符串，即包含多个字符的字符数<br>据这个String类提供了数值不可改变字符串而这个StringBuffer类提供的字符串进行修改当你知道字<br>符数据要改变的时候你就可以使用StringBuffer典型地，你可以使用StringBuffers来动态构造字符数据
+
+<br><br>
+String 类型和StringBuffer的主要性能区别：String是不可变的对象,因此在每次对String类型进行改变<br>的时候，都会生成一个新的 String 对象，然后将指针指向新的 String 对象，所以经常改变内容的<br>字符串最好不要用String，因为每次生成对象都会对系统性能产生影响，特别当内存中无引用对象多<br>了以后， JVM 的 GC 就会开始工作，性能就会降低。
+<br><br>
+StringBuilder是一个可变的字符序列，是JDK5.0新增的。此类提供一个与StringBuffer兼容的API，但不<br>保证同步。该类被设计用作StringBuffer的一个简易替换，用在字符串缓冲区被单个线程使用的时候<br>
+（这种情况很普遍）。
+<br>
+在大部分情况下，StringBuilder > StringBuffer。这主要是由于前者不需要考虑线程安全。
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Servlet接口实现类</title>
+</head>
+<body>
+<h3>Servlet接口实现类</h3>
+　　Servlet接口SUN公司定义了两个默认实现类，分别为：GenericServlet、HttpServlet。
+<br>
+　　HttpServlet指能够处理HTTP请求的servlet，它在原有Servlet接口上添加了一些与HTTP协议处理方<br>法，它比Servlet接口的功能更为强大。因此开发人员在编写Servlet时，通常应继承这个类，而避免<br>直接去实现Servlet接口。<br><br>
+　　HttpServlet在实现Servlet接口时，覆写了service方法，该方法体内的代码会自动判断用户的请求<br>方式，如为GET请求，则调用HttpServlet的doGet方法，如为Post请求，则调用doPost方法。因此，开<br>发人员在编写Servlet时，通常只需要覆写doGet或doPost方法，而不要去覆写service方法。
+<br>
+“接口设计～实现”分离的好处:
+<br>
+1)方便管理
+2)方便代码的重用
+3)方便代码的修复性
+</body>
+</html>
